@@ -111,10 +111,15 @@
      justify-content: center;
      align-items: center;
      opacity: 0;
+
+     /* Animaçao */
+     transform: translateX(100vh);
+     transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
  }
 
- .ativo {
+ .active {
      opacity: 1;
+     transform: translateX(0);
  }
 
  .Produto-img {
@@ -124,13 +129,27 @@
      align-items: center;
      justify-content: center;
      z-index: 2;
+     
+     /* Animaçao  */
+     transform: translateX(200px);
+     
+     transition:transform 0.6s ease,opacity ;
+     transition-delay:0.5s ;
  }
 
  .Produto-img img {
      max-width: 80%;
      max-height: 60%;
      filter: drop-shadow(0 0 30px rgba(0, 247, 255, 0.3));
+
+     /* Animaçao 
+     transform: translateX(200px);
+     
+     transition:transform 0.6s ease,opacity ;
+     transition-delay:0.5s ; */
  }
+
+ 
 
  .content {
      width: 55%;
@@ -178,7 +197,7 @@
 
  .arrows {
      position: absolute;
-     width: 90%;
+     width: 100%;
      display: flex;
      justify-content: space-between;
      top: 50%;
@@ -235,7 +254,7 @@
 
  }
 
- .dot.ative {
+ .dot.active {
      background-color: #00f7ff;
      box-shadow: 0 0 10px rgba(0, 247, 255, 0.5);
  }
@@ -256,27 +275,36 @@
      border: 1px solid rgba(0, 247, 255, 0.2);
 
  }
- .circle:nth-child(1){
-    width: 200px;
-    height: 200px;
-    top:10%;
-    left: 10%;
+
+ .circle:nth-child(1) {
+     width: 200px;
+     height: 200px;
+     top: 10%;
+     left: 10%;
  }
- .circle:nth-child(2){
-    width: 300px;
-    height: 300px;
-    top:60%;
-    left: 80%;
+
+ .circle:nth-child(2) {
+     width: 300px;
+     height: 300px;
+     top: 60%;
+     left: 80%;
  }
- .circle:nth-child(3){
-    width: 150px;
-    height: 150px;
-    top:70%;
-    left: 20%;
+
+ .circle:nth-child(3) {
+     width: 150px;
+     height: 150px;
+     top: 70%;
+     left: 20%;
  }
-  .circle:nth-child(4){
-    width: 120px;
-    height: 120px;
-    top:20%;
-    left: 70%;
+
+ .circle:nth-child(4) {
+     width: 120px;
+     height: 120px;
+     top: 20%;
+     left: 70%;
+ }
+
+ img {
+     width: 500px;
+
  }
