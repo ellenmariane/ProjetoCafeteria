@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    border: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.formTarefa {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#novaTarefa {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid rgb(107, 107, 107);
+}
+
+button {
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius:10px ;
+    background-color: rgb(204, 79, 79);
+    color: white;
+}
+
+#b1 {
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius:10px ;
+    background-color: rgb(68, 68, 192);
+    color: white;
+}
+
+ul#listaTarefas li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8
+}
