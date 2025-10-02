@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+}
+
+#formTarefa {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#novaTarefa {
+  padding: 10px;
+  width: 250px;
+}
+
+#adicionarTarefa {
+  padding: 10px 20px;
+  margin-left: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 400px;
+  margin: auto;
+}
+
+li {
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li.concluida {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.remover {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  cursor: pointer;
+}

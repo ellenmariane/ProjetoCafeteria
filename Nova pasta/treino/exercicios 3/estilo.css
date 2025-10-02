@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.menu {
+    background-color: rgb(57, 57, 207);
+    color: white;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+}
+
+.compra {
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    padding: 50px;
+    margin-top: 50px;
+    height: 300px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.compra p {
+    margin-bottom: 10px;
+    /* Adiciona 24 pixels de espaço abaixo de cada parágrafo */
+
+}
+
+input {
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid rgb(87, 86, 86);
+}
+
+main {
+    background-color: rgb(247, 243, 243);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+button{
+   width: 100px;
+cursor: pointer;
+height: 30px;
+margin: 5px;
+color: white;
+background-color: rgb(27, 72, 221);
+border-radius: 5px; 
+}

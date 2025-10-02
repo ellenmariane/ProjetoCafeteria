@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+
+}
+
+main {
+
+    background-color: rgb(241, 241, 241);
+    width: 100%;
+    height: 100vh;
+    grid: 50px;
+    display: flex;
+    justify-content: center;
+}
+.container p{
+    margin: 5px;
+}
+.container img {
+    height: 50%;
+}
+#b1{
+width: 200px;
+cursor: pointer;
+height: 30px;
+margin: 5px;
+color: white;
+background-color: rgb(27, 72, 221);
+border-radius: 5px;
+}
+#b2{
+width: 200px;
+cursor: pointer;
+height: 30px;
+margin: 5px;
+color: white;
+background-color: red;
+border-radius: 5px;
+}
+.container {
+    background-color: rgb(245, 245, 245);
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    margin-top: 100px;
+   border-radius: 10px;
+   font-family: Arial, Helvetica, sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: background-color 0.5s ease;
+}
+
+input{
+    width: 50px;
+    border-radius: 5px;
+    height: 25px;
+    padding: 5px;
+    text-align: center;
+}
+.menu {
+    background-color: rgb(35, 35, 131);
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    height: 6dvh;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#carrinho {
+    background-color: rgb(13, 83, 235);
+    color: white;
+    border-radius: 20px;
+    width: 100px;
+}

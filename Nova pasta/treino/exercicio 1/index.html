@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+<script src="jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+    <div class="menu">
+        <p>Minha loja</p>
+        <button id="carrinho">carrinho <span id="quantidade">(0)</span></button>
+    </div>
+    <main>
+        <div class="container">
+            <img src="imagem.png" alt="">
+            <h2>Produto de limpesa</h2>
+            <p>Limpador Multiuso, 500ml</p>
+            <p><b>R$9,50</b></p>
+            <p>Quantidade</p>
+            <input id="numero" type="number">
+            <button id="b1" >Adicionar ao Carrinho</button>
+            <button id="b2" >Remover do Carrinho </button>
+    
+    </div>
+</main>
+<script>
+$(document).ready(function(){
+
+   // Adicionar ao carrinho
+    $("#b1").click(function() {
+        let quantidade = parseInt($('#numero').val()); // Pega o valor atual do input
+        let carrinhoQuantidade = parseInt($('#quantidade').text().replace(/[^\d]/g, '')); // Pega o número atual do carrinho, removendo qualquer texto extra
+        $('#quantidade').text(`(${carrinhoQuantidade + quantidade})`); // Atualiza o valor do carrinho
+    });
+
+    // Remover do carrinho
+    $("#b2").click(function() {
+        let quantidade = parseInt($('#numero').val()); // Pega o valor atual do input
+        let carrinhoQuantidade = parseInt($('#quantidade').text().replace(/[^\d]/g, ''));
+        let novaQuantidade = carrinhoQuantidade - 1;
+        if (novaQuantidade < 0) novaQuantidade =0; // Evita números negativos
+        $('#quantidade').text(`(${novaQuantidade})`); // Atualiza o valor do carrinho
+    });
+
+});
+</script>
+</body>
+
+</html>
